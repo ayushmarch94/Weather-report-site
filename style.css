@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+#navbar{
+    height: 70px;
+    background-color: salmon;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: black;
+    margin: 10px ;
+    border-radius: 10px;
+}
+
+
+#search{
+    height: 30px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    border:none;
+    padding: 2px;
+}
+
+#click{
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    background-color: rgb(136, 24, 255);
+    border:none;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    padding: 2px;
+}
