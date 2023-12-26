@@ -66,8 +66,11 @@ body{
 
 #cards p{
     color: white;
-    font-size: 30px;
     margin: 10px;
+}
+
+.head{
+    font-size: 30px;
 }
 
 hr{
@@ -116,4 +119,8 @@ hr{
     backdrop-filter: blur(25px);
     border: 2px solid rgb(98, 0, 255);
     border-radius: 10px;
+}
+
+.data{
+    font-size: 15px;
 }
