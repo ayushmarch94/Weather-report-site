@@ -49,15 +49,16 @@ async function getData() {
 
 
         changePct.innerHTML=`Cloud percipitation : ${pct}`;
-        changePct.innerHTML=`Cloud percipitation : ${pct}`;
-        changePct.innerHTML=`Cloud percipitation : ${pct}`;
-        changePct.innerHTML=`Cloud percipitation : ${pct}`;
-        changePct.innerHTML=`Cloud percipitation : ${pct}`;
-        changePct.innerHTML=`Cloud percipitation : ${pct}`;
-        changePct.innerHTML=`Cloud percipitation : ${pct}`;
-        changePct.innerHTML=`Cloud percipitation : ${pct}`;
-        changePct.innerHTML=`Cloud percipitation : ${pct}`;
-        changePct.innerHTML=`Cloud percipitation : ${pct}`;
+        changeFeel.innerHTML=`Feeld like : ${feels}`;
+        changeHumid.innerHTML=`Humidity : ${humidity}`;
+        changeTemp.innerHTML=`Temprature : ${temp}`;
+        changeMax.innerHTML=`Maximum Temprature : ${max_temp}`;
+        changeMin.innerHTML=`Minimum Temprature : ${min_temp}`;
+        changeWindSpeed.innerHTML=`Wind Speed : ${wind_speed}`;
+        changeWindDegree.innerHTML=`Wind Degree : ${wind_degrees}`;
+        changeSunRise.innerHTML=`Sunrise time : ${sunrise}`;
+        changeSunSet.innerHTML=`Sunset time : ${sunset}`;
+
 
     } catch (error) {
         console.error(error);
