@@ -7,9 +7,7 @@
 }
 
 body{
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-
+   background-color: rgb(167, 100, 255);
 }
 
 #container{
@@ -18,6 +16,8 @@ body{
     
 }
 
+
+
 #navbar{
     height: 70px;
     background-color: salmon;
@@ -25,13 +25,13 @@ body{
     justify-content: end;
     align-items: center;
     background-color: black;
-    margin: 10px ;
+    margin: 20px ;
     border-radius: 10px;
 }
 
 #navbar p{
     position: absolute;
-    left: 20px;
+    left: 30px;
     font-size: 200%;
     color: white;
 }
@@ -62,10 +62,16 @@ body{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    border: 2px solid rebeccapurple;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
 }
 
 #cards p{
-    color: white;
+    color: black;
     margin: 10px;
 }
 
@@ -77,15 +83,11 @@ hr{
     margin: 10px;
     border-top: 2px solid white;
 }
-#cards img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+
 
 #cloud{
     height: 200px;
-    width: 30%;
+    width: 350px;
     margin: 30px;
     background: rgba(111, 0, 255, 0.2);
     backdrop-filter: blur(25px);
@@ -95,7 +97,7 @@ hr{
 
 #temp{
     height: 200px;
-    width: 30%;
+    width: 350px;
     background: rgba(111, 0, 255, 0.2);
     backdrop-filter: blur(25px);
     border: 2px solid rgb(98, 0, 255);
@@ -104,7 +106,7 @@ hr{
 }
 #wind{
     height: 200px;
-    width: 30%;
+    width: 350px;
     background: rgba(111, 0, 255, 0.2);
     backdrop-filter: blur(25px);
     margin: 30px;
@@ -113,7 +115,7 @@ hr{
 }
 #sun{
     height: 200px;
-    width: 30%;
+    width: 350px;
     margin: 30px;
     background: rgba(111, 0, 255, 0.2);
     backdrop-filter: blur(25px);
