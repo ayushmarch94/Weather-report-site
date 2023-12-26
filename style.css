@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -61,6 +64,16 @@ body{
     flex-wrap: wrap;
 }
 
+#cards p{
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+
+hr{
+    margin: 10px;
+    border-top: 2px solid white;
+}
 #cards img{
     height: 100%;
     width: 100%;
@@ -73,6 +86,7 @@ body{
     margin: 30px;
     background: rgba(111, 0, 255, 0.2);
     backdrop-filter: blur(25px);
+    border: 2px solid rgb(98, 0, 255);
     border-radius: 10px;
 }
 
@@ -81,6 +95,7 @@ body{
     width: 30%;
     background: rgba(111, 0, 255, 0.2);
     backdrop-filter: blur(25px);
+    border: 2px solid rgb(98, 0, 255);
     margin: 30px;
     border-radius: 10px;
 }
@@ -90,6 +105,7 @@ body{
     background: rgba(111, 0, 255, 0.2);
     backdrop-filter: blur(25px);
     margin: 30px;
+    border: 2px solid rgb(98, 0, 255);
     border-radius: 10px;
 }
 #sun{
@@ -98,5 +114,6 @@ body{
     margin: 30px;
     background: rgba(111, 0, 255, 0.2);
     backdrop-filter: blur(25px);
+    border: 2px solid rgb(98, 0, 255);
     border-radius: 10px;
 }
