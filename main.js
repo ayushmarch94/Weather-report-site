@@ -1,4 +1,3 @@
-const url = 'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Delhi';
 const options = {
 	method: 'GET',
 	headers: {
@@ -7,22 +6,22 @@ const options = {
 	}
 };
 
-async function fetchData() {
+async function fetchData(city) {
+    const url = `https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=${city}`;
     try {
         const response = await fetch(url, options);
         const result = await response.json();
-        return result
+        return result;
     } catch (error) {
         console.error(error);
     }
 }
 
 
-async function getData() {
+async function getData(obj) {
     try {
         // Fetch data
-        const data = await fetchData();
-        console.log(data);
+        const data = await obj
 
         // Access weather details
         let pct = data.cloud_pct;
@@ -36,6 +35,7 @@ async function getData() {
         let sunrise = data.sunrise;
         let sunset = data.sunset;
 
+        //Access html content
         let changePct =document.getElementById('changePct');
         let changeFeel =document.getElementById('changeFeel');
         let changeHumid =document.getElementById('changeHumid');
@@ -47,13 +47,13 @@ async function getData() {
         let changeSunRise =document.getElementById('changeSunRise');
         let changeSunSet =document.getElementById('changeSunSet');
 
-
+        //Displayed data
         changePct.innerHTML=`Cloud percipitation : ${pct}`;
-        changeFeel.innerHTML=`Feeld like : ${feels}`;
+        changeFeel.innerHTML=`Feeld like : ${feels} degree celcius`;
         changeHumid.innerHTML=`Humidity : ${humidity}`;
-        changeTemp.innerHTML=`Temprature : ${temp}`;
-        changeMax.innerHTML=`Maximum Temprature : ${max_temp}`;
-        changeMin.innerHTML=`Minimum Temprature : ${min_temp}`;
+        changeTemp.innerHTML=`Temprature : ${temp} degree celcius`;
+        changeMax.innerHTML=`Maximum Temprature : ${max_temp} degree celcius`;
+        changeMin.innerHTML=`Minimum Temprature : ${min_temp} degree celcius`;
         changeWindSpeed.innerHTML=`Wind Speed : ${wind_speed}`;
         changeWindDegree.innerHTML=`Wind Degree : ${wind_degrees}`;
         changeSunRise.innerHTML=`Sunrise time : ${sunrise}`;
@@ -65,4 +65,15 @@ async function getData() {
     }
 }
 
-getData();
+let button=document.getElementById('button1');
+let inputCity=document.getElementById('search')
+button.addEventListener('click', async ()=>{
+    var city=inputCity.value.trim();
+    var obj=fetchData(city);
+    getData(obj);
+})
+
+
+
+
+
