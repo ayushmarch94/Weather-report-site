@@ -49,11 +49,11 @@ async function getData(obj) {
 
         //Displayed data
         changePct.innerHTML=`Cloud percipitation : ${pct}`;
-        changeFeel.innerHTML=`Feeld like : ${feels} degree celcius`;
+        changeFeel.innerHTML=`Feeld like : ${feels}°C`;
         changeHumid.innerHTML=`Humidity : ${humidity}`;
-        changeTemp.innerHTML=`Temprature : ${temp} degree celcius`;
-        changeMax.innerHTML=`Maximum Temprature : ${max_temp} degree celcius`;
-        changeMin.innerHTML=`Minimum Temprature : ${min_temp} degree celcius`;
+        changeTemp.innerHTML=`Temprature : ${temp}°C`;
+        changeMax.innerHTML=`Maximum Temprature : ${max_temp}°C`;
+        changeMin.innerHTML=`Minimum Temprature : ${min_temp}°C`;
         changeWindSpeed.innerHTML=`Wind Speed : ${wind_speed}`;
         changeWindDegree.innerHTML=`Wind Degree : ${wind_degrees}`;
         changeSunRise.innerHTML=`Sunrise time : ${sunrise}`;
