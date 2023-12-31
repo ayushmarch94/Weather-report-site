@@ -23,18 +23,6 @@ async function getData(obj) {
         // Fetch data
         const data = await obj
 
-        // Access weather details
-        let pct = data.cloud_pct;
-        let feels = data.feels_like;
-        let humidity = data.humidity;
-        let temp = data.temp;
-        let min_temp = data.min_temp;
-        let max_temp = data.max_temp;
-        let wind_speed = data.wind_speed;
-        let wind_degrees = data.wind_degrees;
-        let sunrise = data.sunrise;
-        let sunset = data.sunset;
-
         //Access html content
         let changePct =document.getElementById('changePct');
         let changeFeel =document.getElementById('changeFeel');
@@ -48,16 +36,16 @@ async function getData(obj) {
         let changeSunSet =document.getElementById('changeSunSet');
 
         //Displayed data
-        changePct.innerHTML=`Cloud percipitation : ${pct}`;
-        changeFeel.innerHTML=`Feeld like : ${feels}°C`;
-        changeHumid.innerHTML=`Humidity : ${humidity}`;
-        changeTemp.innerHTML=`Temprature : ${temp}°C`;
-        changeMax.innerHTML=`Maximum Temprature : ${max_temp}°C`;
-        changeMin.innerHTML=`Minimum Temprature : ${min_temp}°C`;
-        changeWindSpeed.innerHTML=`Wind Speed : ${wind_speed}`;
-        changeWindDegree.innerHTML=`Wind Degree : ${wind_degrees}`;
-        changeSunRise.innerHTML=`Sunrise time : ${sunrise}`;
-        changeSunSet.innerHTML=`Sunset time : ${sunset}`;
+        changePct.innerHTML=`Cloud percipitation : ${data.cloud_pct}`;
+        changeFeel.innerHTML=`Feeld like : ${data.feels_like}°C`;
+        changeHumid.innerHTML=`Humidity : ${data.humidity}`;
+        changeTemp.innerHTML=`Temprature : ${data.temp}°C`;
+        changeMax.innerHTML=`Maximum Temprature : ${data.max_temp}°C`;
+        changeMin.innerHTML=`Minimum Temprature : ${data.min_temp}°C`;
+        changeWindSpeed.innerHTML=`Wind Speed : ${data.wind_speed}`;
+        changeWindDegree.innerHTML=`Wind Degree : ${data.wind_degrees}`;
+        changeSunRise.innerHTML=`Sunrise time : ${data.sunrise}`;
+        changeSunSet.innerHTML=`Sunset time : ${data.sunset}`;
 
 
     } catch (error) {
