@@ -2,7 +2,7 @@ const options = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': 'a6db9daa17msh107d70f18efdec5p1734b4jsn399a3df2ecf1',
-		'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
+		'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'     //API end point
 	}
 };
 
@@ -56,9 +56,9 @@ async function getData(obj) {
 let button=document.getElementById('button1');
 let inputCity=document.getElementById('search')
 button.addEventListener('click', async ()=>{
-    var city=inputCity.value.trim();
-    var obj=fetchData(city);
-    getData(obj);
+    var city=inputCity.value.trim();        // city name from input field
+    var obj=fetchData(city);    // we fetch data from api for specific city
+    getData(obj);               // HTML content manipulation
 })
 
 
