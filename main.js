@@ -36,13 +36,13 @@ async function getData(obj) {
         let changeSunSet =document.getElementById('changeSunSet');
 
         //Displayed data
-        changePct.innerHTML=`Cloud percipitation : ${data.cloud_pct}`;
-        changeFeel.innerHTML=`Feeld like : ${data.feels_like}°C`;
-        changeHumid.innerHTML=`Humidity : ${data.humidity}`;
-        changeTemp.innerHTML=`Temprature : ${data.temp}°C`;
-        changeMax.innerHTML=`Maximum Temprature : ${data.max_temp}°C`;
-        changeMin.innerHTML=`Minimum Temprature : ${data.min_temp}°C`;
-        changeWindSpeed.innerHTML=`Wind Speed : ${data.wind_speed}`;
+        changePct.innerHTML=`Cloud precipitation : ${data.cloud_pct}`;
+        changeFeel.innerHTML=`Feels like : ${data.feels_like}°C`;
+        changeHumid.innerHTML=`Humidity : ${data.humidity}%`;
+        changeTemp.innerHTML=`Temperature : ${data.temp}°C`;
+        changeMax.innerHTML=`Maximum Temperature : ${data.max_temp}°C`;
+        changeMin.innerHTML=`Minimum Temperature : ${data.min_temp}°C`;
+        changeWindSpeed.innerHTML=`Wind Speed : ${data.wind_speed}Km/h`;
         changeWindDegree.innerHTML=`Wind Degree : ${data.wind_degrees}`;
         changeSunRise.innerHTML=`Sunrise time : ${data.sunrise}`;
         changeSunSet.innerHTML=`Sunset time : ${data.sunset}`;
