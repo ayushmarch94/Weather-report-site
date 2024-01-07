@@ -1,29 +1,56 @@
-@media only screen and (max-width: 870px) { 
-    #navbar{
-        height: 140px;
-        background-color: salmon;
-        display: flex;
-        justify-content: end;
-        background-color: black;
-        margin: 10px ;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
+@media only screen and (max-width: 732px) {
+    #Box1 {
+      height: 380px;
+      background-color: white;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-
-    #navbar p{
-        position: relative;
-        left: 20px;
-        top: 10px;
-        font-size: 20px;
-        color: white;
-        margin: 20px;
-        margin-left: 10px;
+  
+    #container {
+      height: 100%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 30px;
     }
-
-    #search{
-        width: 80%;
+  
+    #cards {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px;
+      background-color: #efefef;
+      width: 97%;
+      height: 400px;
     }
-}
+  }
+  
+  @media only screen and (max-width: 656px) {
+      #cards {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-wrap: wrap;
+          padding: 10px;
+          background-color: #efefef;
+          width: 96%;
+          height: 600px;
+        }
+  }
+  
+  @media only screen and (max-width: 438px) {
+      #cards {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-wrap: wrap;
+          padding: 10px;
+          background-color: #efefef;
+          width: 95%;
+          height: 1000px;
+        }
+  }

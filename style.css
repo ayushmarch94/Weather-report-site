@@ -7,40 +7,48 @@
 }
 
 body{
-   background-color: rgb(167, 100, 255);
-   background-color: rgb(167, 100, 255);
+    background-color: #d1cfcf;
 }
 
 #container{
     height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    margin-left: 120px;
+}
+
+#Box1{
+    height: 550px;
+    background-color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#navbar{
+    display: flex;
+    background-color: white;
+    margin: 20px ;
+    height: 100px;
     width: 100%;
 }
 
-#navbar{
-    height: 70px;
-    background-color: salmon;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    background-color: black;
-    margin: 20px ;
-    border-radius: 10px;
-}
-
 #navbar p{
-    position: absolute;
-    left: 30px;
     font-size: 30px;
-    color: white;
+    color: black;
 }
 
 #search{
     height: 30px;
-    width: 35%;
+    width: 90%;
     margin: 10px;
     border-radius: 10px;
-    border:none;
+    border: 1px solid black;
     padding: 2px;
+    margin-top: 20px;
+    background-color: #ededef;
 }
 
 #button1{
@@ -53,6 +61,11 @@ body{
     cursor: pointer;
     margin: 10px;
     padding: 2px;
+    margin-top: 20px;
+}
+
+#Temp{
+    font-size: 80px;
 }
 
 #cards{
@@ -60,67 +73,17 @@ body{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    border: 2px solid rebeccapurple;
-    border-radius: 10px;
-    margin: 20px;
     padding: 10px;
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    background-color: #efefef;
+    width: 60%;
 
-}
-
-#cards p{
-    color: black;
-    margin: 10px;
-}
-
-.head{
-    font-size: 30px;
-}
-
-hr{
-    margin: 10px;
-    border-top: 2px solid white;
-}
-
-
-#cloud{
-    height: 200px;
-    width: 400px;
-    margin: 30px;
-    background: rgba(111, 0, 255, 0.2);
-    backdrop-filter: blur(25px);
-    border: 2px solid rgb(98, 0, 255);
-    border-radius: 10px;
-}
-
-#temp{
-    height: 200px;
-    width: 400px;
-    margin: 30px;
-    background: rgba(111, 0, 255, 0.2);
-    backdrop-filter: blur(25px);
-    border: 2px solid rgb(98, 0, 255);
-    border-radius: 10px;
-}
-#wind{
-    height: 200px;
-    width: 400px;
-    margin: 30px;
-    background: rgba(111, 0, 255, 0.2);
-    backdrop-filter: blur(25px);
-    border: 2px solid rgb(98, 0, 255);
-    border-radius: 10px;
-}
-#sun{
-    height: 200px;
-    width: 400px;
-    margin: 30px;
-    background: rgba(111, 0, 255, 0.2);
-    backdrop-filter: blur(25px);
-    border: 2px solid rgb(98, 0, 255);
-    border-radius: 10px;
 }
 .data{
     font-size: 15px;
+    width: 150px;
+    height: 80px;
+    background-color: #748cf1;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
 }

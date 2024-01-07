@@ -39,7 +39,7 @@ async function getData(obj) {
         Pct.innerHTML=`Cloud precipitation : ${data.cloud_pct}`;
         Feel.innerHTML=`Feels like : ${data.feels_like}°C`;
         Humid.innerHTML=`Humidity : ${data.humidity}%`;
-        Temp.innerHTML=`Temperature : ${data.temp}°C`;
+        Temp.innerHTML=` ${data.temp}°C`;
         Max.innerHTML=`Maximum Temperature : ${data.max_temp}°C`;
         Min.innerHTML=`Minimum Temperature : ${data.min_temp}°C`;
         WindSpeed.innerHTML=`Wind Speed : ${data.wind_speed}Km/h`;
