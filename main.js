@@ -24,28 +24,28 @@ async function getData(obj) {
         const data = await obj
 
         //Access html content
-        let changePct =document.getElementById('changePct');
-        let changeFeel =document.getElementById('changeFeel');
-        let changeHumid =document.getElementById('changeHumid');
-        let changeTemp =document.getElementById('changeTemp');
-        let changeMax =document.getElementById('changeMax');
-        let changeMin =document.getElementById('changeMin');
-        let changeWindSpeed =document.getElementById('changeWindSpeed');
-        let changeWindDegree =document.getElementById('changeWindDegree');
-        let changeSunRise =document.getElementById('changeSunRise');
-        let changeSunSet =document.getElementById('changeSunSet');
+        let Pct =document.getElementById('Pct');
+        let Feel =document.getElementById('Feel');
+        let Humid =document.getElementById('Humid');
+        let Temp =document.getElementById('Temp');
+        let Max =document.getElementById('Max');
+        let Min =document.getElementById('Min');
+        let WindSpeed =document.getElementById('WindSpeed');
+        let WindDegree =document.getElementById('WindDegree');
+        let SunRise =document.getElementById('SunRise');
+        let SunSet =document.getElementById('SunSet');
 
         //Displayed data
-        changePct.innerHTML=`Cloud precipitation : ${data.cloud_pct}`;
-        changeFeel.innerHTML=`Feels like : ${data.feels_like}°C`;
-        changeHumid.innerHTML=`Humidity : ${data.humidity}%`;
-        changeTemp.innerHTML=`Temperature : ${data.temp}°C`;
-        changeMax.innerHTML=`Maximum Temperature : ${data.max_temp}°C`;
-        changeMin.innerHTML=`Minimum Temperature : ${data.min_temp}°C`;
-        changeWindSpeed.innerHTML=`Wind Speed : ${data.wind_speed}Km/h`;
-        changeWindDegree.innerHTML=`Wind Degree : ${data.wind_degrees}`;
-        changeSunRise.innerHTML=`Sunrise time : ${data.sunrise}`;
-        changeSunSet.innerHTML=`Sunset time : ${data.sunset}`;
+        Pct.innerHTML=`Cloud precipitation : ${data.cloud_pct}`;
+        Feel.innerHTML=`Feels like : ${data.feels_like}°C`;
+        Humid.innerHTML=`Humidity : ${data.humidity}%`;
+        Temp.innerHTML=`Temperature : ${data.temp}°C`;
+        Max.innerHTML=`Maximum Temperature : ${data.max_temp}°C`;
+        Min.innerHTML=`Minimum Temperature : ${data.min_temp}°C`;
+        WindSpeed.innerHTML=`Wind Speed : ${data.wind_speed}Km/h`;
+        WindDegree.innerHTML=`Wind Degree : ${data.wind_degrees}`;
+        SunRise.innerHTML=`Sunrise time : ${data.sunrise}`;
+        SunSet.innerHTML=`Sunset time : ${data.sunset}`;
 
 
     } catch (error) {
