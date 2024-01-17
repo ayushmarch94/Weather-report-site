@@ -57,6 +57,7 @@ let button=document.getElementById('button1');
 let inputCity=document.getElementById('search')
 button.addEventListener('click', async ()=>{
     var city=inputCity.value.trim();        // city name from input field
+    console.log(city);
     var obj=fetchData(city);    // we fetch data from api for specific city
     getData(obj);               // HTML content manipulation
 })

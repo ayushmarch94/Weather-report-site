@@ -10,7 +10,7 @@ body{
     background-color: #d1cfcf;
 }
 
-.container{
+#container{
     height: 90vh;
     width: 95vw;
     display: flex;
@@ -18,7 +18,7 @@ body{
     margin: 30px;
 }
 
-.Box1{
+#Box1{
     height: 100%;
     background-color: white;
     width: 40%;
@@ -26,7 +26,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.navbar{
+#navbar{
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -35,12 +35,11 @@ body{
     width: 100%;
 }
 
-.navbar p{
+#navbar p{
     font-size: 30px;
     color: black;
 }
-
-.search{
+#search{
     height: 30px;
     width: 90%;
     margin: 10px;
@@ -51,7 +50,7 @@ body{
     background-color: #ededef;
 }
 
-.button1{
+#button1{
     height: 30px;
     width: 90%;
     border-radius: 5px;
@@ -64,15 +63,15 @@ body{
     margin-top: 20px;
 }
 
-.Temp{
-    font-size: 8vh;
+#Temp{
+    font-size: 6vh;
 }
 
 img{
     width: 20vw;
 }
 
-.cards{
+#cards{
     display: flex;
     justify-content: space-around;
     align-items: center;
