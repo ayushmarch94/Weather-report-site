@@ -1,29 +1,23 @@
-@media only screen and (max-width: 750px){
-  #navbar{
+@media only screen and (max-width: 800px){
+  .data{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .head{
     display: flex;
     flex-direction: column;
   }
 
-  #button1{
-    height: 30px;
-    width: 90%;
-    border-radius: 5px;
-    background-color: rgb(136, 24, 255);
-    border:none;
-    color: white;
-    cursor: pointer;
-    margin: 10px;
-    padding: 2px;
-    margin-top: 20px;
+  button{
+    width: 80%;
+  }
 }
-#search{
-  height: 30px;
-  width: 80%;
-  margin: 10px;
-  border-radius: 10px;
-  border: 1px solid black;
-  padding: 2px;
-  margin-top: 20px;
-  background-color: #ededef;
-}
+
+@media only screen and (max-width: 400px){
+  .dataContainer{
+    width: 100%;
+  }
+
 }

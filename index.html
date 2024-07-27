@@ -6,27 +6,33 @@
     <title>Weather report site</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="./sun.png">
 </head>
 <body>
-    <div id="container">
-        <div id="Box1">
-            <div id="navbar">
-                <input placeholder="SEARCH CITY" type="text" id="search">
-                <button type="submit" id="button1">SEARCH</button>
-            </div>
-            <img src="./sun.png" width="150px">
-            <p id="Temp"></p> 
+    <div class="container">
+        <div class="head">
+            <input placeholder="SEARCH CITY" type="text" id="search">
+            <button id="button1">SEARCH</button>
         </div>
-        <div id="cards">
-            <p id="Pct" class="data">Cloud precipitation : </p>
-            <p id="Feel" class="data">Feel like : </p>
-            <p id="Humid" class="data">Humidity : </p>
-            <p id="Max"  class="data">Maximum Temperature : </p> 
-            <p id="Min" class="data">Minimum Temperature : </p> 
-            <p id="WindSpeed" class="data">Wind Speed : </p>
-            <p id="WindDegree" class="data">Wind Degree : </p>
-            <p id="SunRise" class="data">Sunrise time : </p>
-            <p id="SunSet" class="data">Sunset time : </p>
+        <div class="currentTemp">
+            <img src="./sun.png" width="150px">
+            <p id="Temp">Current Temperature</p> 
+        </div>
+        <div class="dataContainer">
+            <div class="data">
+                <div class="part1">
+                    <p id="Feel" class="data">Feel like</p>
+                    <p id="Humid" class="data">Humidity</p>
+                    <p id="Max"  class="data">Maximum Temperature</p> 
+                    <p id="Min" class="data">Minimum Temperature</p> 
+                </div>
+                <div class="part2">
+                    <p id="WindSpeed" class="data">Wind Speed</p>
+                    <p id="WindDegree" class="data">Wind Degree</p>
+                    <p   p id="SunRise" class="data">Sunrise time</p>
+                    <p id="SunSet" class="data">Sunset time</p>
+                </div>
+            </div>
         </div>
     </div>
     <script src="main.js"></script>
